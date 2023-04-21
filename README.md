@@ -23,3 +23,8 @@ Selain itu variablenya yang bisa kita gunakan type data embed.FS
 Selain manual satu persatu seperti sebelumnya kita juga bisa menggunakan patch matcher untuk membaca file yang kita inginkan
 Ini cocok ketika misalnya kita punya pola jenis file yang kita inginkan untuk dibaca
 Caranya , Kita perlu menggunakan patch matcher seperti pada package function `path.Match`
+
+# Hasil Embed Di Compile
+Perlu diketahui, bahwa hasil embed yang dilakukan oleh package embed adalah permanen dan data file yang dibaca disimpan dalam binari file golangnya
+Artinya bukan dilakukan secara realtime membaca file yang ada diluar
+Hal ini menjadikan jika binari file golang sudah di compile, kita tidak butuh lagi file externalnya, dan bahkan jika diubah file externalnya isi variabelnya tidak akan berubah
