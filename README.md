@@ -18,3 +18,8 @@ Type data ini sangat cocok untuk jika kita ingin melakukan embed file dalam bent
 # Embed Multiple Files
 Untuk melakukan embed beberapa file sekaligus kita bisa dengan komentar `//go:embed` lebih dari satu baris 
 Selain itu variablenya yang bisa kita gunakan type data embed.FS
+
+# Patch Matcher
+Selain manual satu persatu seperti sebelumnya kita juga bisa menggunakan patch matcher untuk membaca file yang kita inginkan
+Ini cocok ketika misalnya kita punya pola jenis file yang kita inginkan untuk dibaca
+Caranya , Kita perlu menggunakan patch matcher seperti pada package function `path.Match`
